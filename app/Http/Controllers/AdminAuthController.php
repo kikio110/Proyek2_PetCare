@@ -16,13 +16,19 @@ class AdminAuthController extends Controller
     {
         $credentials = $request->validate([
             'email' => 'required|email',
-            'password' => 'required'
+            'password' => 'required',
         ]);
     
         if (Auth::attempt($credentials)) {
             $request->session()->regenerate();
-            return redirect()->intended('/dashboard_admin')
+            $user = Auth::user();
+            if ($user->role == 'admin') {
+            return redirect()->intended('/dashboard_klinik')
                 ->withSuccess('You have successfully logged in!');
+            } else {
+                return back()->withErrors([
+                    'email' => 'You do not have permission to access the Klinik dashboard.',]);
+            }
         }
     
         return back()->withErrors([
