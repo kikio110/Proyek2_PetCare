@@ -16,8 +16,12 @@ use App\Http\Controllers\PetOwnerAuthController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/healthypet', function () {
+    return view('landing-page.landing-page');
+});
+
+Route::get('/mitra_healthypet', function () {
+    return view('landingpage-mitra.landingpage-mitra');
 });
 
 Route::get('/login/admin', [AdminAuthController::class, 'showLoginForm'])->name('login');
