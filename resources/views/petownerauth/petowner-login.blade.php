@@ -40,7 +40,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-  	<title>PetCare Login</title>
+  	<title>HealthyPet Login</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -56,7 +56,7 @@
 		<div class="container">
 			<div class="row justify-content-center">
 				<div class="col-md-6 text-center mb-5">
-					<h2 class="heading-section">Login</h2>
+					<h2 class="heading-section">Selamat Datang!</h2>
 				</div>
 				
 				@if($errors->any())
@@ -76,7 +76,6 @@
 		      	<div class="icon d-flex align-items-center justify-content-center">
 		      		<span class="fa fa-user-o"></span>
 		      	</div>
-		      	<h3 class="text-center mb-4">Email</h3>
 						<form method="POST" action="{{ route('login_petowner') }}" class="login-form">
 		      		<div class="form-group">
 		      			<input type="email" name="email" id="email" class="form-control rounded-left" placeholder="Email" value="{{ old('email') }}" required>
@@ -95,7 +94,7 @@
 									</label>
 								</div>
 								<div class="w-50 text-md-right">
-									<a href="#">Forgot Password</a>
+									<!--<a href="#">Forgot Password</a>-->
 								</div>
 	            </div>
 	          </form>
