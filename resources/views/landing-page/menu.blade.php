@@ -7,6 +7,7 @@
     <base href="{{ asset('landing-page') }}">
     <link rel="stylesheet" href="landing-page/assets/css/style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </head>
 <body>
     <header class="header">
@@ -24,19 +25,41 @@
 
     <section class="home">
         <div class="home-content">
-            <h3>Hai</h3>
-
-            <h1>Selamat <span>Datang<br></span>
+            <h1>Pelayanan <span>Kami<br></span>
             </h1>
 
-            <p>HealthyPet Tempat konsultasi terbaik untuk
-                hewan  <br>kesayangan anda, kami melayani dengan
-                senang hati</p>
+            <p>HealthyPet melayani </p>
 
-            <div class="btn-box">
-               <a href="/login/petowner"><button class="btn-login">Login</button></a> 
-                <a href="/register/petowner"><button class="btn-daftar">Daftar</button></a>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="card" style="border-radius: 10%">
+                            <img class="card-img-top" style="border-radius: 10%" src="https://images.pexels.com/photos/978959/pexels-photo-978959.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Card image cap">
+                            <div class="card-body">
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="card" style="border-radius: 10%">
+                            <img class="card-img-top" style="border-radius: 10%" src="https://images.pexels.com/photos/978959/pexels-photo-978959.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Card image cap">
+                            <div class="card-body">
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="card" style="border-radius: 10%">
+                            <img class="card-img-top" style="border-radius: 10%" src="https://images.pexels.com/photos/978959/pexels-photo-978959.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Card image cap">
+                            <div class="card-body">
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                          </div>
+                    </div>
+                </div>
             </div>
+            
+
         {{-- </div>
         <div class="img-box">
             <img src="landing-page/assets/images/dog.png" alt="">

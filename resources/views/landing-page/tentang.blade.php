@@ -24,19 +24,16 @@
 
     <section class="home">
         <div class="home-content">
-            <h3>Hai</h3>
-
-            <h1>Selamat <span>Datang<br></span>
+            <h1>Tentang <span>Kami<br></span>
             </h1>
 
-            <p>HealthyPet Tempat konsultasi terbaik untuk
-                hewan  <br>kesayangan anda, kami melayani dengan
-                senang hati</p>
-
-            <div class="btn-box">
-               <a href="/login/petowner"><button class="btn-login">Login</button></a> 
-                <a href="/register/petowner"><button class="btn-daftar">Daftar</button></a>
-            </div>
+            <p>Lorem ipsum dolor sit amet consectetur 
+                adipisicing elit. <br>Qui nemo error modi 
+                unde hic debitis, et molestiae eac <br> 
+                temporibus reprehenderit quam 
+                voluptates deserunt laboriosam <br>
+                assumenda! Debitis culpa omnis
+                rem nisi?</p>
         {{-- </div>
         <div class="img-box">
             <img src="landing-page/assets/images/dog.png" alt="">

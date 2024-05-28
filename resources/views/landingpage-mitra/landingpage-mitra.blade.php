@@ -11,8 +11,13 @@
 <body>
     <header class="header">
         <a href="#" class="logo"><span>Healthy</span>Pet</a>
-
-        <a href="#" class="contact">Kontak Kami</a>
+        <nav class="navbar">
+            <a href="/healthypet" class="active">Beranda</a>
+            <a href="/menu">Menu</a>
+            <a href="/kontak">Kontak</a>
+            <a href="/tentang">Tentang</a>
+        </nav>
+        {{-- <a href="#" class="contact">Kontak Kami</a> --}}
     </header>
 
     <section class="home">
