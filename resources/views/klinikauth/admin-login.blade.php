@@ -232,6 +232,7 @@
                   @endif
                 </div>
                 <form method="POST" action="{{ route('login_klinik') }}" class="login-form">
+                  @csrf
                   <div class="form-group first">
                     <label for="username">Username</label>
                     <input type="text" class="form-control" placeholder="your-email@gmail.com" id="username">
