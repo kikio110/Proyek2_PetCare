@@ -47,6 +47,7 @@ Route::get('/register/admin_klinik', [AdminKlinikAuthController::class, 'showReg
 Route::post('/register/admin_klinik', [AdminKlinikAuthController::class, 'register']);
 Route::post('/logout/admin_klinik', [AdminKlinikAuthController::class, 'logout'])->name('logout');
 
+//otentikasi 
 Route::get('/login/petowner', [PetOwnerAuthController::class, 'showLoginForm'])->name('login_petowner');
 Route::post('/login/petowner', [PetOwnerAuthController::class, 'login']);
 Route::get('/register/petowner', [PetOwnerAuthController::class, 'showRegistrationForm'])->name('register_petowner');
