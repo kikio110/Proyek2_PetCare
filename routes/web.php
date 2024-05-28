@@ -24,6 +24,19 @@ Route::get('/mitra_healthypet', function () {
     return view('landingpage-mitra.landingpage-mitra');
 });
 
+Route::get('/menu',function () {
+    return view('landing-page.menu');
+});
+
+Route::get('/kontak',function () {
+    return view('landing-page.kontak');
+});
+
+Route::get('/tentang',function () {
+    return view('landing-page.tentang');
+});
+
+
 Route::get('/login/admin', [AdminAuthController::class, 'showLoginForm'])->name('login');
 Route::post('/login/admin', [AdminAuthController::class, 'login']);
 Route::post('/logout', [AdminAuthController::class, 'logout'])->name('logout');

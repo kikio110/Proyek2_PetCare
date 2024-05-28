@@ -22,26 +22,23 @@
         <a href="/mitra_healthypet" class="contact">Mitra Kami</a>
     </header>
 
-    <section class="home">
+    {{-- <section class="home">
         <div class="home-content">
-            <h3>Hai</h3>
-
-            <h1>Selamat <span>Datang<br></span>
+            <h1>Pelayanan <span>Kami<br></span>
             </h1>
 
-            <p>HealthyPet Tempat konsultasi terbaik untuk
-                hewan  <br>kesayangan anda, kami melayani dengan
-                senang hati</p>
-
-            <div class="btn-box">
-               <a href="/login/petowner"><button class="btn-login">Login</button></a> 
-                <a href="/register/petowner"><button class="btn-daftar">Daftar</button></a>
-            </div>
-        {{-- </div>
+            <p>Lorem ipsum dolor sit amet consectetur 
+                adipisicing elit. <br>Qui nemo error modi 
+                unde hic debitis, et molestiae eac <br> 
+                temporibus reprehenderit quam 
+                voluptates deserunt laboriosam <br>
+                assumenda! Debitis culpa omnis
+                rem nisi?</p>
+        </div>
         <div class="img-box">
             <img src="landing-page/assets/images/dog.png" alt="">
-        </div> --}}
-    </section>
+        </div>
+    </section> --}}
 
     {{-- <section class="about">
         <div class="about-img">
@@ -56,7 +53,13 @@
             <div class="btn-box">
             <a href="/mitra_healthypet"><button class="btn-daftar">Selengkapnya</button></a> 
         </div>
-    </section>
+    </section> --}}
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
     <section class="contact-form">
         <h2 class="contact-us">Kontak <span>kami</span></h2>
         <form action="#">
@@ -72,7 +75,7 @@
             rows="10" placeholder="Tulis Pesan"></textarea>
             <input type="submit" value="Kirim Pesan" class="btn-daftar">
         </form>
-    </section> --}}
+    </section>
     <footer class="footer">
         <div class="social">
             <a href="#"><i class='bx bxl-facebook-circle bx-sm'></i></a>
