@@ -14,13 +14,13 @@
         <a href="#" class="logo"><span>Healthy</span>Pet</a>
 
         <nav class="navbar">
-            <a href="/healthypet" class="active">Beranda</a>
+            <a href="/landingpage" class="active">Beranda</a>
             <a href="/menu">Menu</a>
             <a href="/kontak">Kontak</a>
             <a href="/tentang">Tentang</a>
         </nav>
 
-        <a href="/mitra_healthypet" class="contact">Mitra Kami</a>
+        <a href="/mitra" class="contact">Mitra Kami</a>
     </header>
 
     <section class="home">
@@ -36,7 +36,7 @@
                         <div class="card" style="border-radius: 10%">
                             <img class="card-img-top" style="border-radius: 10%" src="https://images.pexels.com/photos/978959/pexels-photo-978959.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Card image cap">
                             <div class="card-body">
-                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                              <p class="card-text">Diagnosa</p>
                             </div>
                           </div>
                     </div>
@@ -44,7 +44,7 @@
                         <div class="card" style="border-radius: 10%">
                             <img class="card-img-top" style="border-radius: 10%" src="https://images.pexels.com/photos/978959/pexels-photo-978959.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Card image cap">
                             <div class="card-body">
-                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                              <p class="card-text">Groming</p>
                             </div>
                           </div>
                     </div>
@@ -52,7 +52,7 @@
                         <div class="card" style="border-radius: 10%">
                             <img class="card-img-top" style="border-radius: 10%" src="https://images.pexels.com/photos/978959/pexels-photo-978959.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Card image cap">
                             <div class="card-body">
-                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                              <p class="card-text">Vaksinasi</p>
                             </div>
                           </div>
                     </div>
