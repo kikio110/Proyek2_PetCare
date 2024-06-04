@@ -13,13 +13,13 @@
         <a href="#" class="logo"><span>Healthy</span>Pet</a>
 
         <nav class="navbar">
-            <a href="/healthypet" class="active">Beranda</a>
+            <a href="/landingpage" class="active">Beranda</a>
             <a href="/menu">Menu</a>
             <a href="/kontak">Kontak</a>
             <a href="/tentang">Tentang</a>
         </nav>
 
-        <a href="/mitra_healthypet" class="contact">Mitra Kami</a>
+        <a href="/mitra" class="contact">Mitra Kami</a>
     </header>
 
     <section class="home">
@@ -27,13 +27,7 @@
             <h1>Tentang <span>Kami<br></span>
             </h1>
 
-            <p>Lorem ipsum dolor sit amet consectetur 
-                adipisicing elit. <br>Qui nemo error modi 
-                unde hic debitis, et molestiae eac <br> 
-                temporibus reprehenderit quam 
-                voluptates deserunt laboriosam <br>
-                assumenda! Debitis culpa omnis
-                rem nisi?</p>
+            <p style="text-align: justify;">HealthyPet adalah aplikasi yang dirancang untuk membantu pemilik hewan peliharaan dalam merawat kesehatan dan kesejahteraan hewan mereka dengan lebih efektif. Aplikasi ini menawarkan berbagai fitur seperti pengelolaan informasi kesehatan hewan, pengingat perawatan rutin, panduan perawatan harian, serta layanan konsultasi dan telemedicine dengan dokter hewan. Selain itu, HealthyPet memungkinkan pencarian klinik dan dokter hewan terdekat, penjadwalan janji temu, serta menyediakan platform komunitas bagi pemilik hewan untuk berbagi pengalaman. Dengan fitur pelacakan aktivitas dan kesehatan yang terintegrasi dengan perangkat wearable, aplikasi ini memastikan hewan peliharaan mendapatkan perawatan yang tepat waktu dan berkualitas, sekaligus meningkatkan kesadaran pemilik tentang pentingnya perawatan kesehatan preventif.</p>
         {{-- </div>
         <div class="img-box">
             <img src="landing-page/assets/images/dog.png" alt="">

@@ -13,13 +13,13 @@
         <a href="#" class="logo"><span>Healthy</span>Pet</a>
 
         <nav class="navbar">
-            <a href="/healthypet" class="active">Beranda</a>
+            <a href="/landingpage" class="active">Beranda</a>
             <a href="/menu">Menu</a>
             <a href="/kontak">Kontak</a>
             <a href="/tentang">Tentang</a>
         </nav>
 
-        <a href="/mitra_healthypet" class="contact">Mitra Kami</a>
+        <a href="/mitra" class="contact">Mitra Kami</a>
     </header>
 
     <section class="home">
@@ -37,10 +37,10 @@
                <a href="/login/petowner"><button class="btn-login">Login</button></a> 
                 <a href="/register/petowner"><button class="btn-daftar">Daftar</button></a>
             </div>
-        {{-- </div>
+        </div>
         <div class="img-box">
-            <img src="landing-page/assets/images/dog.png" alt="">
-        </div> --}}
+            <img src="landing-page/assets/images/dog.png" style="margin: 160px" alt="">
+        </div>
     </section>
 
     {{-- <section class="about">
