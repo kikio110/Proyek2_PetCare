@@ -246,7 +246,7 @@
                       <input type="checkbox" checked="checked"/>
                       <div class="control__indicator"></div>
                     </label>
-                    <span class="ml-auto"><a href="#" class="forgot-pass">Forgot Password</a></span>
+                    <span class="ml-auto"><a href="/register/admin_klinik" class="forgot-pass">Belum memiliki akun?</a></span>
                   </div>
                   <input type="submit" value="Log In" class="btn btn-block btn-primary">
                 </form>

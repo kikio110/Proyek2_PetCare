@@ -26,7 +26,7 @@ class PetOwnerAuthController extends Controller
             $request->session()->regenerate();
             $user = Auth::user();
             if ($user->role == 'petowner') {
-            return redirect()->intended('/dashboard_petowner')
+            return redirect()->intended('dashboard_petowner')
                 ->withSuccess('You have successfully logged in!');
             } else {
                 return back()->withErrors([
@@ -66,6 +66,13 @@ class PetOwnerAuthController extends Controller
         $role = User::where('email', 'petowner')->first();
         $user->roles()->attach($role);
     
-        return redirect('/admin/dashboard');
+        return redirect('dashboard_petowner');
+    }
+
+    public function logout()
+    {
+        Auth::logout();
+
+        return redirect('/login/petowner');
     }
 }
