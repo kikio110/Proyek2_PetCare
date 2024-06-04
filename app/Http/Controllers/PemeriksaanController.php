@@ -1,4 +1,6 @@
 <?php
+namespace App\Http\Controllers;
+
 use App\Models\Pemeriksaan;
 use Illuminate\Http\Request;
 

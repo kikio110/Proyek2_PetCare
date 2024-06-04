@@ -37,10 +37,10 @@
                <a href="/login/petowner"><button class="btn-login">Login</button></a> 
                 <a href="/register/petowner"><button class="btn-daftar">Daftar</button></a>
             </div>
-        {{-- </div>
+        </div>
         <div class="img-box">
             <img src="landing-page/assets/images/dog.png" alt="">
-        </div> --}}
+        </div>
     </section>
 
     {{-- <section class="about">
