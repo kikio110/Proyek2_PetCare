@@ -18,9 +18,26 @@ use App\Http\Controllers\AdminController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/healthypet', function () {
+    return view('landing-page.landing-page');
 });
+
+Route::get('/mitra_healthypet', function () {
+    return view('landingpage-mitra.landingpage-mitra');
+});
+
+Route::get('/menu',function () {
+    return view('landing-page.menu');
+});
+
+Route::get('/kontak',function () {
+    return view('landing-page.kontak');
+});
+
+Route::get('/tentang',function () {
+    return view('landing-page.tentang');
+});
+
 
 Route::get('/login/admin', [AdminAuthController::class, 'showLoginForm'])->name('login');
 Route::post('/login/admin', [AdminAuthController::class, 'login']);
@@ -32,6 +49,7 @@ Route::get('/register/admin_klinik', [AdminKlinikAuthController::class, 'showReg
 Route::post('/register/admin_klinik', [AdminKlinikAuthController::class, 'register']);
 Route::post('/logout/admin_klinik', [AdminKlinikAuthController::class, 'logout'])->name('logout');
 
+//otentikasi 
 Route::get('/login/petowner', [PetOwnerAuthController::class, 'showLoginForm'])->name('login_petowner');
 Route::post('/login/petowner', [PetOwnerAuthController::class, 'login']);
 Route::get('/register/petowner', [PetOwnerAuthController::class, 'showRegistrationForm'])->name('register_petowner');

@@ -40,7 +40,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-  	<title>PetCare Login</title>
+  	<title>HealthyPet Login</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -56,7 +56,7 @@
 		<div class="container">
 			<div class="row justify-content-center">
 				<div class="col-md-6 text-center mb-5">
-					<h2 class="heading-section">Login</h2>
+					<h2 class="heading-section">Selamat Datang!</h2>
 				</div>
 				
 				@if($errors->any())
@@ -77,29 +77,28 @@
 		      		<span class="fa fa-user-o"></span>
 		      	</div>
 		      	<h3 class="text-center mb-4">Email</h3>
-				  <form method="POST" action="{{ route('login_petowner') }}" class="login-form">
-					@csrf
-					<div class="form-group">
-						<input type="email" name="email" id="email" class="form-control rounded-left" placeholder="Email" value="{{ old('email') }}" required>
-					</div>
-					<div class="form-group d-flex">
-						<input type="password" name="password" class="form-control rounded-left" placeholder="Password" required>
-					</div>
-					<div class="form-group">
-						<button type="submit" class="form-control btn btn-primary rounded submit px-3">Login</button>
-					</div>
-					<div class="form-group d-md-flex">
-						<div class="w-50">
-							<label class="checkbox-wrap checkbox-primary">Remember Me
-								<input type="checkbox" name="remember" checked>
-								<span class="checkmark"></span>
-							</label>
-						</div>
-						<div class="w-50 text-md-right">
-							<a href="#">Forgot Password</a>
-						</div>
-					</div>
-				</form>				
+						<form method="POST" action="{{ route('login_petowner') }}" class="login-form">
+		      		<div class="form-group">
+		      			<input type="email" name="email" id="email" class="form-control rounded-left" placeholder="Email" value="{{ old('email') }}" required>
+		      		</div>
+	            <div class="form-group d-flex">
+	              <input type="password" class="form-control rounded-left" placeholder="Password" required>
+	            </div>
+	            <div class="form-group">
+	            	<button type="submit" class="form-control btn btn-primary rounded submit px-3">Login</button>
+	            </div>
+	            <div class="form-group d-md-flex">
+	            	<div class="w-50">
+	            		<label class="checkbox-wrap checkbox-primary">Remember Me
+									  <input type="checkbox" checked>
+									  <span class="checkmark"></span>
+									</label>
+								</div>
+								<div class="w-50 text-md-right">
+									<a href="#">Forgot Password</a>
+								</div>
+	            </div>
+	          </form>
 	        </div>
 				</div>
 			</div>
