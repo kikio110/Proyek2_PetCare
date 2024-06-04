@@ -1,9 +1,11 @@
 <?php
 
+use App\Http\Controllers\Admin\AdminController as AdminAdminController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AdminAuthController;
 use App\Http\Controllers\AdminKlinikAuthController;
 use App\Http\Controllers\PetOwnerAuthController;
+use App\Http\Controllers\AdminController;
 
 /*
 |--------------------------------------------------------------------------
@@ -39,3 +41,5 @@ Route::post('/logout/petowner', [AdminKlinikAuthController::class, 'logout'])->n
 Route::get('/login/dokter', [AdminAuthController::class, 'showLoginForm'])->name('login_dokter');
 Route::post('/login/dokter', [AdminAuthController::class, 'login']);
 Route::post('/logout', [AdminAuthController::class, 'logout'])->name('logout');
+
+Route::get('/pemeriksaans', [PemeriksaanController::class, 'index'])->name('pemeriksaan.index');
