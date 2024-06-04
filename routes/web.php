@@ -1,11 +1,12 @@
-<?php
-
+use App\Http\Controllers\Admin\AdminController as AdminAdminController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AdminAuthController;
 use App\Http\Controllers\AdminKlinikAuthController;
 use App\Http\Controllers\dashboardcontroller;
 use App\Http\Controllers\PetOwnerAuthController;
 use App\Http\Controllers\LandingPageController;
+use App\Http\Controllers\AdminController;
+use App\Http\Controllers\PemeriksaanController;
 
 /*
 |--------------------------------------------------------------------------
@@ -54,3 +55,6 @@ Route::get('/mitra', [LandingPageController::class, 'show_mitra'])->name('landin
 Route::get('/tentang', [LandingPageController::class, 'show_tentang'])->name('landingpage.tentang');
 Route::get('/menu', [LandingPageController::class, 'show_menu'])->name('landingpage.menu');
 Route::get('/kontak', [LandingPageController::class, 'show_kontak'])->name('landingpage.kontak');
+
+//pemeriksaan
+Route::get('/pemeriksaans', [PemeriksaanController::class, 'index'])->name('pemeriksaan.index');
