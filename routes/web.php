@@ -1,3 +1,5 @@
+<?php
+
 use App\Http\Controllers\Admin\AdminController as AdminAdminController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AdminAuthController;
@@ -5,7 +7,7 @@ use App\Http\Controllers\AdminKlinikAuthController;
 use App\Http\Controllers\dashboardcontroller;
 use App\Http\Controllers\PetOwnerAuthController;
 use App\Http\Controllers\LandingPageController;
-use App\Http\Controllers\AdminController;
+use App\Http\Controllers\AdminKlinikController;
 use App\Http\Controllers\PemeriksaanController;
 
 /*
@@ -58,3 +60,7 @@ Route::get('/kontak', [LandingPageController::class, 'show_kontak'])->name('land
 
 //pemeriksaan
 Route::get('/pemeriksaans', [PemeriksaanController::class, 'index'])->name('pemeriksaan.index');
+
+//setting data klinik
+Route::get('/data/admin_klinik', [AdminKlinikController::class, 'create'])->name('data_klinik');
+Route::post('/data/admin_klinik', [AdminKlinikController::class, 'store']);
