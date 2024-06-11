@@ -16,6 +16,11 @@ class AdminKlinikController extends Controller
         return view('admin_kliniks.index', compact('adminKliniks'));
     }
 
+    public function tampilkan_dashboard_klinik()
+    {
+        return view('klinik.dashboard');
+    }
+
     /**
      * Show the form for creating a new resource.
      */
