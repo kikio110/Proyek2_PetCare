@@ -9,7 +9,7 @@ class DokterAuthController extends Controller
 {
     public function showLoginForm()
     {
-        return view('authdokter.login-dokter');
+        return view('dokterauth.login-dokter');
     }
 
     public function login(Request $request) {

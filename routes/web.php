@@ -3,6 +3,7 @@
 use App\Http\Controllers\Admin\AdminController as AdminAdminController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AdminAuthController;
+use App\Http\Controllers\DokterAuthController;
 use App\Http\Controllers\AdminKlinikAuthController;
 use App\Http\Controllers\dashboardcontroller;
 use App\Http\Controllers\PetOwnerAuthController;
@@ -41,9 +42,9 @@ Route::post('/register/petowner', [PetOwnerAuthController::class, 'register']);
 Route::post('/logout/petowner', [PetOwnerAuthController::class, 'logout'])->name('logout_petowner');
 
 //otentikasi dokter
-Route::get('/login/dokter', [AdminAuthController::class, 'showLoginForm'])->name('login_dokter');
-Route::post('/login/dokter', [AdminAuthController::class, 'login']);
-Route::post('/logout', [AdminAuthController::class, 'logout'])->name('logout');
+Route::get('/login/dokter', [DokterAuthController::class, 'showLoginForm'])->name('login_dokter');
+Route::post('/login/dokter', [DokterAuthController::class, 'login']);
+Route::post('/logout', [DokterAuthController::class, 'logout'])->name('logout');
 
 //dashboard
 Route::get('/dashboard_admin', [dashboardcontroller::class, 'dashboard_admin'])->name('dashboard_admin');
