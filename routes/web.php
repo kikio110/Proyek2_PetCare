@@ -64,3 +64,6 @@ Route::get('/pemeriksaans', [PemeriksaanController::class, 'index'])->name('peme
 //setting data klinik
 Route::get('/data/admin_klinik', [AdminKlinikController::class, 'create'])->name('data_klinik');
 Route::post('/data/admin_klinik', [AdminKlinikController::class, 'store']);
+Route::get('/data/admin_klinik', [AdminKlinikController::class, 'edit'])->name('edit_data_klinik');
+Route::post('/data/admin_klinik', [AdminKlinikController::class, 'update']);
+Route::post('/data/admin_klinik', [AdminKlinikController::class, 'destroy']);

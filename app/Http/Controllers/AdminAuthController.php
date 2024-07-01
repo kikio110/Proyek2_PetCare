@@ -23,11 +23,11 @@ class AdminAuthController extends Controller
             $request->session()->regenerate();
             $user = Auth::user();
             if ($user->role == 'admin') {
-            return redirect()->intended('/dashboard_klinik')
+            return redirect()->intended('/dashboard_admin')
                 ->withSuccess('You have successfully logged in!');
             } else {
                 return back()->withErrors([
-                    'email' => 'You do not have permission to access the Klinik dashboard.',]);
+                    'email' => 'You do not have permission to access the Admin dashboard.',]);
             }
         }
     

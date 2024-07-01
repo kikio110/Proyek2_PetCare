@@ -21,7 +21,7 @@ class UserSeeder extends Seeder
             //'name' => Str::random(10),
             'email' => Str::random(10).'@example.com',
             'password' => Hash::make('password'),
-            'role' => 'admin_klinik',
+            'role' => 'petowner',
         ]);
     }
 }

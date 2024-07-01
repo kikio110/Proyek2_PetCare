@@ -11,7 +11,7 @@ class UserController extends Controller
      */
     public function ViewKlinik()
     {
-        $klinik = User::where('role', 'klinik')->get();
+        $klinik = User::where('role', 'admin_klinik')->get();
         return view('admin.dataPengguna.data_klinik', compact('klinik'));
     }
     
