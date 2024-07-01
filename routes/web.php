@@ -49,7 +49,7 @@ Route::post('/logout', [DokterAuthController::class, 'logout'])->name('logout');
 //dashboard
 Route::get('/dashboard_admin', [dashboardcontroller::class, 'dashboard_admin'])->name('dashboard_admin');
 Route::get('/dashboard_petowner', [dashboardcontroller::class, 'dashboard_petowner'])->name('dashboard_petowner');
-Route::get('/dashboard_klinik', [AdminKlinikController::class, 'tampilkan_dashboard_klinik'])->name('dashboard_klinik');
+Route::get('/dashboard_klinik', [dashboardcontroller::class, 'dashboard_klinik'])->name('dashboard_klinik');
 Route::get('/dashboard_dokter', [dashboardcontroller::class, 'dashboard_dokter'])->name('dashboard_dokter');
 
 //landingpage

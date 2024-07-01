@@ -65,6 +65,6 @@ class AdminKlinikAuthController extends Controller
         $role = User::where('email', 'admin_klinik')->first();
         $user->roles()->attach($role);
     
-        return redirect('/admin/dashboard');
+        return redirect('/dashboard_klinik');
     }
 }
