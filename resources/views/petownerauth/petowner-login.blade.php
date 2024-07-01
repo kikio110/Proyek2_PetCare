@@ -78,11 +78,12 @@
 		      	</div>
 		      	<h3 class="text-center mb-4">Email</h3>
 						<form method="POST" action="{{ route('login_petowner') }}" class="login-form">
+						@csrf
 		      		<div class="form-group">
 		      			<input type="email" name="email" id="email" class="form-control rounded-left" placeholder="Email" value="{{ old('email') }}" required>
 		      		</div>
 	            <div class="form-group d-flex">
-	              <input type="password" class="form-control rounded-left" placeholder="Password" required>
+	              <input type="password" name="password" id="password"class="form-control rounded-left" placeholder="Password" required>
 	            </div>
 	            <div class="form-group">
 	            	<button type="submit" class="form-control btn btn-primary rounded submit px-3">Login</button>

@@ -38,27 +38,28 @@
 		      		<span class="fa fa-user-o"></span>
 		      	</div>
 		      	<h3 class="text-center mb-4">Email</h3>
-						<form method="POST" action="{{ route('login') }}" class="login-form">
+					<form method="POST" action="{{ route('login') }}" class="login-form">
+						@csrf
 		      		<div class="form-group">
 		      			<input type="email" name="email" id="email" class="form-control rounded-left" placeholder="Email" value="{{ old('email') }}" required>
 		      		</div>
-	            <div class="form-group d-flex">
-	              <input type="password" class="form-control rounded-left" placeholder="Password" required>
-	            </div>
-	            <div class="form-group">
-	            	<button type="submit" class="form-control btn btn-primary rounded submit px-3">Login</button>
-	            </div>
-	            <div class="form-group d-md-flex">
-	            	<div class="w-50">
-	            		<label class="checkbox-wrap checkbox-primary">Remember Me
-									  <input type="checkbox" checked>
-									  <span class="checkmark"></span>
-									</label>
-								</div>
-								<div class="w-50 text-md-right">
-									<a href="#">Forgot Password</a>
-								</div>
-	            </div>
+					<div class="form-group d-flex">
+						<input type="password"name="password" id="password" class="form-control rounded-left" placeholder="Password" required>
+					</div>
+					<div class="form-group">
+						<button type="submit" class="form-control btn btn-primary rounded submit px-3">Login</button>
+					</div>
+					<div class="form-group d-md-flex">
+						<div class="w-50">
+							<label class="checkbox-wrap checkbox-primary">Remember Me
+										<input type="checkbox" checked>
+										<span class="checkmark"></span>
+										</label>
+									</div>
+									<div class="w-50 text-md-right">
+										<a href="#">Forgot Password</a>
+									</div>
+					</div>
 	          </form>
 	        </div>
 				</div>
