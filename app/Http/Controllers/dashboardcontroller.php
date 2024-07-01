@@ -9,7 +9,7 @@ class dashboardcontroller extends Controller
 {
     public function dashboard_petowner()
     {
-        return view("dashboard-layout.adminkit");
+        return view("petowner.dashboard");
     }
 
     public function dashboard_admin()
@@ -26,12 +26,12 @@ class dashboardcontroller extends Controller
 
     public function dashboard_klinik()
     {
-        return view("dashboard-layout.adminkit");
+        return view("klinik.dashboard");
     }
 
     public function dashboard_dokter()
     {
-        return view("dashboard-layout.adminkit");
+        return view("dokter.dashboard");
     }
 }
 
