@@ -1,76 +1,21 @@
 @extends('petowner.app.app')
 
 @section('section', 'dashboard')
-
+<base href="{{ asset('petowner-banner') }}">
+<link rel="stylesheet" href="\petowner-banner\assets\style.css">
 @section('content')
     <main id="main" class="main">
         <section class="section dashboard">
-            <div class="row">
-
-                <!-- Left side columns -->
-                <div class="col-lg-10">
-                    <div class="row">
-
-
-
-                        <!-- Revenue Card -->
-                        <div class="col-xxl-4 col-md-6">
-                            <div class="card info-card revenue-card">
-
-
-
-                                <div class="card-body">
-                                    <h5 class="card-title">Dokter</h5>
-
-                                    <div class="d-flex align-items-center">
-                                        <div
-                                            class="card-icon rounded-circle d-flex align-items-center justify-content-center">
-                                            <i class="bi bi-file-earmark-text-fill"></i>
-                                        </div>
-                                        <div class="ps-3">
-                                            {{-- <h6>{{ $klinik }}</h6> --}}
-
-
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div><!-- End Revenue Card -->
-
-                        <!-- Customers Card -->
-                        {{-- <div class="col-xxl-4 col-xl-12"> --}}
-
-                            <div class="card info-card customers-card">
-
-
-
-                                <div class="card-body">
-                                    <h5 class="card-title">Dokter</h5>
-
-                                    <div class="d-flex align-items-center">
-                                        <div
-                                            class="card-icon rounded-circle d-flex align-items-center justify-content-center">
-                                            <i class="bi bi-people"></i>
-                                        </div>
-                                        <div class="ps-3">
-                                            {{-- <h6>{{ $petowner }}</h6> --}}
-
-
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-
-                        </div><!-- End Customers Card -->
-                    </div>
-                </div><!-- End Left side columns -->
+            <div class="container">
+                <div class="wrapper">
+                    <img src="{{ asset('petowner-banner\assets\img\cat1.png') }}" alt="Cat 1">
+                    <img src="{{ asset('petowner-banner\assets\img\cat2.png') }}" alt="Cat 2">
+                    <img src="{{ asset('petowner-banner\assets\img\cat3.png') }}" alt="Cat 3">
+                    <img src="{{ asset('petowner-banner\assets\img\cat4.png') }}" alt="Cat 4">
+                    <img src="{{ asset('petowner-banner\assets\img\cat5.png') }}" alt="Cat 5">
+                    <img src="{{ asset('petowner-banner\assets\img\cat6.png') }}" alt="Cat 6">
+                </div>
             </div>
         </section>
-
-    </main><!-- End #main -->
-
-
-
+    </main>
 @endsection
